@@ -1,9 +1,27 @@
+/* * { */
+  /* outline: 1px solid #f00 !important; */
+  /* opacity: 1 !important; */
+  /* visibility: visible !important; */
+/* } */
+
 body
 {
 	margin:0px;
 	padding:0px;
 	border:0px;
+	background-color:rgb(206,206,206);
 }
+
+p
+{
+ padding:8px;
+}
+
+h1
+{
+	padding:8px;
+}
+
 
 #header
 {
@@ -12,11 +30,13 @@ body
 	margin:0px;
 	padding:0px;
 	border:0px;
+	overflow:clip;
 }
 
 #banner
 {
 	height:10vh;
+	width:100%;
 	margin:0px;
 	padding:0px;
 	background-image:url("img/banner_bg_tiled.png");
@@ -28,14 +48,8 @@ body
 	text-align:center;
 	width:100%;
 	height:expanded;
-	/* background-image:linear-gradient(white,blue); */
 	background-image:url("img/nav_ribbon_bg.png");
 	background-size:auto 100%;
-}
-
-#ribbon_inner
-{
-
 }
 
 .ribbon_btn
@@ -46,15 +60,6 @@ body
 	margin:0;
 	padding:0;
 	height:2vh;
-
-}
-
-.btn_label
-{
-	font-family: Arial, Helvetica, sans-serif;
-	text-decoration:none;
-	color:white;
-
 }
 
 #ribbon_shadow
@@ -66,21 +71,51 @@ body
 
 .thumbnail
 {
-	height:25vh;
-	border:solid gray 1px;
+	display:inline-table;
+	/* height:25vh; */
+	height:72px;
+	margin:5px;
+	border:solid gray 2px;
 	
 }
 
 #content
 {
-	padding-top:5%;
-	/* margin-top:32px; */
-	
+	padding:8px;
+	margin-top:16px;
+	background-color:white;
+
 }
 
 #footer
 {
 	text-align:center;
-	background-color:gray;
-	padding:1%;
+	background-color:rgb(113,107,155);
+	padding:0.25%;
+}
+
+
+
+#container
+{
+	width:100%;
+	margin:0;
+	padding:0;
+	background-color:white;
+	
+}
+/*BREAK POINT FOR LARGER SCREENS*/
+@media screen and (min-width:600px){
+	
+	#container
+	{
+		width:50%;
+		margin:auto;
+	}
+
+	.thumbnail
+	{
+		height:256px;
+	}
+	
 }
